@@ -4,10 +4,9 @@ async function fetchPosts() {
   const ul = document.getElementById('posts');
   ul.innerHTML = '';
 
-  posts.forEach(p => {
+   posts.forEach(p => {
     const li = document.createElement('li');
-    li.innerHTML = `<strong>[${p.category}] ${p.title} (${p.id})</strong> by ${p.author}<br>${p.content}<br>`;
-
+    li.innerHTML = `<strong>[${p.category}] ${p.title}</strong> by ${p.author}<br>${p.content}<br>`;
 
     // コメント一覧
     const commentUl = document.createElement('ul');
